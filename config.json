@@ -1,5 +1,5 @@
 {
-    "toutprefix" : "a",
+    "prefix" : "a",
     "botInfo" : {
         "name" : "tout",
         "version": "2.0.1"

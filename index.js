@@ -28,11 +28,11 @@ client.on('message', message => {
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-	let prefixes = JSON.parse(fs.readFileSync('./prefixes.json', 'utf-8'));
+	const prefixes = JSON.parse(fs.readFileSync('./prefixes.json', 'utf-8'));
 
 	if(!prefixes[message.guild.id]) {
 		prefixes[message.guild.id] = {
-			prefixes: toutconfig.prefix,
+			prefixes: toutconfig.prefix
 		};
 	}
 

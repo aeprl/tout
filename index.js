@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const chalk = require('chalk');
 const client = new Discord.Client();
-const { botInfo, toutconfig } = require('./config.json');
+const { botInfo, toutprefix } = require('./config.json');
 const fs = require('fs');
 client.commands = new Discord.Collection();
 
@@ -29,7 +29,7 @@ client.on('message', message => {
 
 	if(!prefixes[message.guild.id]) {
 		prefixes[message.guild.id] = {
-			prefixes: toutconfig.prefix,
+			prefixes: toutprefix.prefix,
 		};
 	}
 

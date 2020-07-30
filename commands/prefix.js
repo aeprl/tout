@@ -7,7 +7,7 @@ module.exports = {
 	description: 'sets the prefix for tout.',
 	execute(message, args) {
 		if(!message.member.hasPermission('MANAGE_GUILD')) return message.reply('no permission to change the prefix');
-		if(!args[0] || args[0 == 'help']) return message.reply('you should do ``!prefix (desired prefix)');
+		if(!args[0] || args[0 == 'help']) return message.reply(`you should do ${prefix}prefix (desired prefix)`);
 
 		const prefixes = JSON.parse(fs.readFileSync('../prefixes.json', 'utf-8'));
 

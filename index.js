@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const chalk = require('chalk');
 const client = new Discord.Client();
-const { botInfo, toutprefix } = require('./config.json');
+const { prefix, botInfo } = require('./config.json');
 const fs = require('fs');
 client.commands = new Discord.Collection();
 
@@ -17,24 +17,13 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	client.user.setActivity('a', { type: 'LISTENING' });
+	console.log(chalk.dim(`prefix is ${prefix}`));
 	console.log(chalk.italic(botInfo.name));
 	console.log(chalk.italic(botInfo.version));
 	console.log(chalk.bold(`${ client.user.username } is ready`));
 });
 
 client.on('message', message => {
-
-
-	const prefixes = JSON.parse(fs.readFileSync('./prefixes.json', 'utf-8'));
-
-	if(!prefixes[message.guild.id]) {
-		prefixes[message.guild.id] = {
-			prefixes: toutprefix.prefix,
-		};
-	}
-
-	const prefix = prefixes[message.guild.id].prefixes;
-	console.log(prefix);
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 

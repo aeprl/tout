@@ -4,7 +4,6 @@ const client = new Discord.Client();
 const { prefix, botInfo } = require('./config.json');
 const fs = require('fs');
 client.commands = new Discord.Collection();
-if(!message.content.startsWith(prefix))return;
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 

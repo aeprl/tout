@@ -12,6 +12,8 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
+if(!message.content.startsWith(prefix))return;
+
 client.once('ready', () => {
 	client.user.setActivity('a', { type: 'LISTENING' });
 	console.log(chalk.dim(`prefix is ${prefix}`));

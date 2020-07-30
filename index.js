@@ -24,7 +24,6 @@ client.once('ready', () => {
 
 client.on('message', message => {
 
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const prefixes = JSON.parse(fs.readFileSync('./prefixes.json', 'utf-8'));
 
@@ -36,6 +35,8 @@ client.on('message', message => {
 
 	const prefix = prefixes[message.guild.id].prefixes;
 	console.log(prefix);
+
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();

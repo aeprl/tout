@@ -9,15 +9,16 @@ module.exports = {
 		if(!message.member.hasPermission('MANAGE_GUILD')) return message.reply('no permission to change the prefix');
 		if(!args[0] || args[0 == 'help']) return message.reply('you should do ``!prefix (desired prefix)');
 
-		let prefixes = JSON.parse(fs.readFileSync('../prefixes.json', 'utf-8'));
+		const prefixes = JSON.parse(fs.readFileSync('../prefixes.json', 'utf-8'));
 
 		prefixes[message.guild.id] = {
 			prefixes: args[0],
 		};
 
 		fs.writeFile('../prefixes.json', JSON.stringify(prefixes), (err) => {
-			if(err) console.log(err),
+			if(err) console.log(err);
 		});
+
 
 		const prefixSet = new Discord.MessageEmbed()
 			.setColor('acc6eb')

@@ -20,12 +20,7 @@ module.exports = {
 		});
 
 
-		const prefixSet = new Discord.MessageEmbed()
-			.setColor('acc6eb')
-			.setTitle('prefix set.')
-			.setDescription(`set to ${args[0]}`);
-
-		message.channel.send(prefixSet);
+		message.channel.send(`prefix set to ${args[0]}`);
 
 	},
 };

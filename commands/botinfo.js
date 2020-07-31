@@ -5,6 +5,7 @@ const commandNumber = fs.readdirSync('./commands').length;
 module.exports = {
 	name: 'botinfo',
 	description: 'shows the info about the bot',
+	alias: 'bi'
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {
 		const toutEmbed = new Discord.MessageEmbed()

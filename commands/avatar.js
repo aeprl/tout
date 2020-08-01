@@ -1,6 +1,9 @@
 /* eslint-disable no-unused-vars */
 const Discord = require('discord.js');
-Discord.avatarURL({ format: 'png', dynamic: true, size: 1024 });
+const client = new Discord.Client();
+
+client.avatarURL({ format: 'png', dynamic: true, size: 1024 });
+
 module.exports = {
 	name: 'avatar',
 	description: 'get your own or the mentioned persons avatar.',

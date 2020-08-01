@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 const Discord = require('discord.js');
-new Discord.client = require('discord.js');
+new Discord.Client(options);
 
 
 module.exports = {
@@ -8,7 +8,7 @@ module.exports = {
 	description: 'get your own or the mentioned persons avatar.',
 	execute(message, args) {
 
-		client.user.avatarURL({ format: 'png', dynamic: true, size: 1024 });
+		Discord.Client.user.avatarURL({ format: 'png', dynamic: true, size: 1024 });
 
 		const avatarEmbed = new Discord.MessageEmbed;
 		if(!message.mentions.users.first()) {

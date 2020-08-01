@@ -11,7 +11,7 @@ module.exports = {
 			avatarEmbed.setThumbnail(message.author.displayAvatarURL());
 			avatarEmbed.setColor('acc6eb');
 			avatarEmbed.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/attachments/472189537162887180/737423238375800837/pfp3.png');
-			return message.reply(require('util').inspect`here you go ${avatarEmbed}`);
+			return message.reply(require('util').inspect(`here you go ${avatarEmbed}`));
 		}
 		else{
 			const mentionedUser = message.mentions.users.first();
@@ -19,7 +19,7 @@ module.exports = {
 			avatarEmbed.setThumbnail(mentionedUser.displayAvatarURL());
 			avatarEmbed.setColor('acc6eb');
 			avatarEmbed.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/attachments/472189537162887180/737423238375800837/pfp3.png');
-			return message.reply(require('util').inspect`here you go ${avatarEmbed}`);
+			return message.reply(require('util').inspect(`here you go ${avatarEmbed}`));
 		}
 	},
 };

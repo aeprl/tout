@@ -7,7 +7,7 @@ module.exports = {
 	description: 'get your own or the mentioned persons avatar.',
 	execute(message, args) {
 
-		Discord.Client.user.avatarURL({ format: 'png', dynamic: true, size: 1024 });
+		message.client.avatarURL({ format: 'png', dynamic: true, size: 1024 });
 
 		const avatarEmbed = new Discord.MessageEmbed;
 		if(!message.mentions.users.first()) {

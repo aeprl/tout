@@ -12,7 +12,7 @@ module.exports = {
 			.setColor('acc6eb')
 			.setTitle('bot info')
 			.setURL('https://www.youtube.com/watch?v=VD6__C2Ht6M')
-			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/attachments/472189537162887180/737423238375800837/pfp3.png')
+			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/854975aa1a09abcc8e1354b3252f6457.png?size=256')
 			.setThumbnail('https://cdn.discordapp.com/attachments/472189537162887180/737423176560279643/toutcircle2.png')
 			.addFields(
 				{ name : 'tout version', value : '2.0.1' },

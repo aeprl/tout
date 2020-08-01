@@ -19,7 +19,7 @@ module.exports = {
 				{ name : 'ping', value : 'some command idk' },
 			)
 			.setAuthor('tout v2')
-			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/attachments/472189537162887180/737423238375800837/pfp3.png')
+			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/854975aa1a09abcc8e1354b3252f6457.png?size=256')
 			.setThumbnail('https://cdn.discordapp.com/attachments/737441496911052830/737469036685819974/toutloop.gif');
 
 		message.author.send(toutHelp);

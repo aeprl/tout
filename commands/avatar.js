@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.avatarURL({ format: 'png', dynamic: true, size: 1024 });
+Discord.User.avatarURL({ format: 'png', dynamic: true, size: 1024 });
 
 module.exports = {
 	name: 'avatar',

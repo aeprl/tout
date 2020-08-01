@@ -13,6 +13,7 @@ module.exports = {
 		if(!message.mentions.users.first()) {
 			avatarEmbed.setThumbnail(message.author.displayAvatarURL());
 			avatarEmbed.setColor('acc6eb');
+			return message.channel.send(avatarEmbed);
 		}
 		else{
 			const mentionedUser = message.mentions.users.first();

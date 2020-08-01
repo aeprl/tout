@@ -8,7 +8,7 @@ module.exports = {
 		const avatarEmbed = new Discord.MessageEmbed;
 		if(!message.mentions.users.first()) {
 			avatarEmbed.setTitle('your avatar');
-			avatarEmbed.setThumbnail(message.displayAavatarURL());
+			avatarEmbed.setThumbnail(message.author.displayAavatarURL());
 			avatarEmbed.setColor('acc6eb');
 			avatarEmbed.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/attachments/472189537162887180/737423238375800837/pfp3.png');
 			return message.reply(`here you go ${avatarEmbed}`);

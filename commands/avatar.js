@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 const Discord = require('discord.js');
-const client = new Discord.Client();
+new Discord.Message(client, data, channel);
 
 
 module.exports = {

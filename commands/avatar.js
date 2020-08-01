@@ -8,10 +8,10 @@ module.exports = {
 	description: 'get your own or the mentioned persons avatar.',
 	execute(message, args) {
 
+		client.user.avatarURL({ format: 'png', dynamic: true, size: 1024 });
+
 		const avatarEmbed = new Discord.MessageEmbed;
 		if(!message.mentions.users.first()) {
-
-			message.author.avatarURL({ format: 'png', dynamic: true, size: 1024 });
 			avatarEmbed.setTitle('your avatar');
 			avatarEmbed.setThumbnail(message.author.displayAvatarURL());
 			avatarEmbed.setColor('acc6eb');
@@ -19,7 +19,6 @@ module.exports = {
 			return message.reply(avatarEmbed);
 		}
 		else{
-			message.mentionedUser.avatarURL({ format: 'png', dynamic: true, size: 1024 });
 			const mentionedUser = message.mentions.users.first();
 			avatarEmbed.setTitle(`${mentionedUser.tag}'s profile picture`);
 			avatarEmbed.setThumbnail(mentionedUser.displayAvatarURL());

@@ -11,9 +11,6 @@ module.exports = {
         if(!message.member.hasPermission('KICK_MEMBERS', 'ADMINISTRATOR'))
             return message.channel.send(`you dont have permissions to kick ${mentionedUser}`)
 
-        if(!mentionedUser.kickable)
-            return message.reply('cant kick that user')
-
         let reason = args.slice(1).join('');
 
         async function kickUser(){

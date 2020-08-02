@@ -9,15 +9,15 @@ module.exports = {
 
 		message.client.user.avatarURL({ format: 'png', dynamic: true, size: 1024 });
 
-		const avatarEmbed = new Discord.MessageEmbed();
+		const avatarEmbed = new Discord.ImageEmbed();
 		if(!message.mentions.users.first()) {
-			avatarEmbed.setEmbed(message.author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
+			avatarEmbed.setImage(message.author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
 			avatarEmbed.setColor('acc6eb');
 			return message.channel.send(avatarEmbed);
 		}
 		else{
 			const mentionedUser = message.mentions.users.first();
-			avatarEmbed.setEmbed(mentionedUser.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
+			avatarEmbed.setImage(mentionedUser.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
 			avatarEmbed.setColor('acc6eb');
 			return message.channel.send(avatarEmbed);
 		}

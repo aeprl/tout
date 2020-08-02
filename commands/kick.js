@@ -11,10 +11,9 @@ module.exports = {
         if(!message.member.hasPermission('KICK_MEMBERS', 'ADMINISTRATOR'))
             return message.channel.send(`you dont have permissions to kick ${mentionedUser}`)
 
-        let reason = args.slice(1).join('');
 
         async function kickUser(){
-            await mentionedUser.kick(reason)
+            await mentionedUser.kick
         message.reply(`${mentionedUser.user.tag} has been kicked by ${message.author}`)
         };
 	},

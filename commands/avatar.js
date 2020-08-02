@@ -11,12 +11,14 @@ module.exports = {
 
 		const avatarEmbed = new Discord.MessageEmbed();
 		if(!message.mentions.users.first()) {
+			avatarEmbed.setAuthor(message.author.username, message.author.displayAvatarURL);
 			avatarEmbed.setImage(message.author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
 			avatarEmbed.setColor('acc6eb');
 			return message.channel.send(avatarEmbed);
 		}
 		else{
 			const mentionedUser = message.mentions.users.first();
+			avatarEmbed.setAuthor(message.author.username, message.author.displayAvatarURL);
 			avatarEmbed.setImage(mentionedUser.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
 			avatarEmbed.setColor('acc6eb');
 			return message.channel.send(avatarEmbed);

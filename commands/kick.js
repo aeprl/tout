@@ -16,8 +16,9 @@ module.exports = {
 
         let reason = args.slice(1).join('');
 
-        await mentionedUser.kick(reason)
+        async{
+            await mentionedUser.kick(reason)
         message.reply(`${mentionedUser.user.tag} has been kicked by ${message.author}`)
-       
+        };
 	},
 };

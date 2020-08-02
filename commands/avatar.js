@@ -11,13 +11,13 @@ module.exports = {
 
 		const avatarEmbed = new Discord.MessageEmbed();
 		if(!message.mentions.users.first()) {
-			avatarEmbed.setThumbnail(message.author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
+			avatarEmbed.setEmbed(message.author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
 			avatarEmbed.setColor('acc6eb');
 			return message.channel.send(avatarEmbed);
 		}
 		else{
 			const mentionedUser = message.mentions.users.first();
-			avatarEmbed.setThumbnail(mentionedUser.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
+			avatarEmbed.setEmbed(mentionedUser.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
 			avatarEmbed.setColor('acc6eb');
 			return message.channel.send(avatarEmbed);
 		}

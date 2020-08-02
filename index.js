@@ -5,7 +5,7 @@ const { prefix, botInfo } = require('./config.json');
 const fs = require('fs');
 client.commands = new Discord.Collection();
 
-/* command handler */
+/* ty william for the help ♥️ */
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 

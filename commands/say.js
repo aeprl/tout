@@ -7,7 +7,9 @@ module.exports = {
 	execute(message, args) {
         
         
-        if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send(`you can't use that without permissions`)
+        if(!message.member.hasPermission('ADMINISTRATOR')) 
+        return message.channel.send('you cant use that command without permissions')
+
         const sayMessage = args.join('');
         message.delete().catch();
         message.channel.send(sayMessage);

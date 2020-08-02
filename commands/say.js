@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 module.exports = {
 	name: 'say',
 	description: 'say things as the bot.',
-	execute(message, args) {
+	execute(message) {
         
         const args = message.content.slice(prefix.length).trim().split(/ +/);
         if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send(`you can't use that without permissions`)

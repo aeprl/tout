@@ -5,16 +5,23 @@ module.exports = {
 	name: 'kick',
 	description: 'kick members off the guild.',
 	execute(message, args) {
-        
-        const mentionedUser = message.mentions.users.first() || message.guild.members.get(args[0]);
-
-        if(!message.member.hasPermission('KICK_MEMBERS', 'ADMINISTRATOR'))
-            return message.channel.send(`you dont have permissions to kick ${mentionedUser}`)
-
-
-        async function kickUser(){
-            await mentionedUser.kick
-        message.reply(`${mentionedUser.user.tag} has been kicked by ${message.author}`)
-        };
-	},
-};
+        const kickingUser = message.mentions.users.first();
+        if(kickingUser){
+            const member = message.guild.member();
+            if(member){
+              member  
+                .kick()
+                .then(() => {
+                    message.reply(`kicked ${kickingUser}`)
+                })
+                .catch(err => {
+                    message.reply('unable to kick the member');
+                    console.error(err);
+                });
+        }else{
+            message.reply('that user isnt in this server');
+        }
+	}else{
+        message.reply('you didnt mention a user to kick')
+    }
+}};

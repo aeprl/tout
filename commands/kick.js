@@ -18,8 +18,6 @@ module.exports = {
                     message.reply('unable to kick the member');
                     console.error(err);
                 });
-        }else{
-            message.reply('that user isnt in this server');
         }
 	}else{
         message.reply('you didnt mention a user to kick')

@@ -18,6 +18,7 @@ for (const file of commandFiles) {
 client.once('ready', () => {
 	client.user.setActivity('a', { type: 'LISTENING' });
 	console.log(chalk.dim(`prefix is ${prefix}`));
+	client.user.setStatus('idle');
 	console.log(chalk.italic(botInfo.name));
 	console.log(chalk.italic(botInfo.version));
 	console.log(chalk.bold(`${ client.user.username }'s up`));

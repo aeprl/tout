@@ -18,7 +18,8 @@ module.exports = {
 				{ name : 'tout version', value : '2.0.1' },
 				{ name : 'no. of commands', value : `${commandNumber}`, inline: true },
 				{ name : 'prefix', value : 'a', inline: true },
-			);
+			)
+			.setTimestamp();
 
 		message.channel.send(toutEmbed);
 	},

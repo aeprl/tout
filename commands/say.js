@@ -9,11 +9,9 @@ module.exports = {
 	execute(message, args) {
         const sayM = args.join(" ");
         message.delete().catch(err => console.log(err));
-        if (member.hasPermission('MANAGE_MESSAGES')){
+
             message.channel.send(sayM);
-        } else{
-            message.channel.send("you don't have permissions to use this command")
-        }
+        
 
 	},
 

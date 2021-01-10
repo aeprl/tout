@@ -1,2 +1,2 @@
 # tout
-a general purpose bot
+kinda useless but eh

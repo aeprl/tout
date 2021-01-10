@@ -16,7 +16,8 @@ module.exports = {
 			.setTitle('bot commands')
 			.addFields(
 				{ name : 'botinfo', value : 'shows the version and amount of commands on the bot' },
-				{ name : 'ping', value : 'some command idk' },
+				{ name : 'avatar', value : 'shows the avatar of the person mentioned/message sender' },
+				{ name : 'pizza', value : 'ay yo the pizza here'}
 			)
 			.setAuthor('tout v2')
 			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/1e9bbdef8ac0a6794c469c1763e7fa8a.png?size=1024')

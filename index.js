@@ -20,7 +20,7 @@ client.once('ready', () => {
 	console.log(chalk.dim(`prefix is ${prefix}`));
 	console.log(chalk.italic(botInfo.name));
 	console.log(chalk.italic(botInfo.version));
-	console.log(chalk.bold(`${ client.user.username } is ready`));
+	console.log(chalk.bold(`${ client.user.username }'s up`));
 });
 
 client.on('message', message => {

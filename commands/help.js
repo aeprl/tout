@@ -19,8 +19,8 @@ module.exports = {
 				{ name : 'ping', value : 'some command idk' },
 			)
 			.setAuthor('tout v2')
-			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/854975aa1a09abcc8e1354b3252f6457.png?size=256')
-			.setThumbnail('https://cdn.discordapp.com/attachments/737441496911052830/737469036685819974/toutloop.gif');
+			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/1e9bbdef8ac0a6794c469c1763e7fa8a.png?size=1024')
+			.setThumbnail('https://cdn.discordapp.com/attachments/472189537162887180/737423176560279643/toutcircle2.png');
 
 		message.author.send(toutHelp);
 	},

@@ -17,7 +17,7 @@ module.exports = {
 			.addFields(
 				{ name : 'botinfo', value : 'shows the version and amount of commands on the bot' },
 				{ name : 'avatar', value : 'shows the avatar of the person mentioned/message sender' },
-				{ name : 'pizza', value : 'ay yo the pizza here'}
+				{ name : 'purge', value : 'deletes multiple messages from 2-100 messages'}
 			)
 			.setAuthor('tout v2')
 			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/1e9bbdef8ac0a6794c469c1763e7fa8a.png?size=1024')

@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log(chalk.dim(`prefix is ${prefix}`));
-	client.user.setPresence({ activity: { name: 'prefix = a' }, status: 'idle' });
+	client.user.setPresence({ activity: { name: 'if you write :3 ill kill you' }, status: 'idle' });
 	console.log(chalk.italic(botInfo.name));
 	console.log(chalk.italic(botInfo.version));
 	console.log(chalk.bold(`${ client.user.username }'s up`));
@@ -32,15 +32,6 @@ client.on('message', message => {
 	if (!client.commands.has(commandName)) return;
 
 	const command = client.commands.get(commandName);
-
-	var array = [';3', ':3'];
-
-	if(array.some(w => ` ${msg.content.toLowerCase()} `.includes(` ${word} `))){
-		msg.delete();
-
-		var role = msg.guild.roles.cache.find(r => r.name === 'no');
-		msg.member.roles.add(role);
-	}
 
 	try {
 		command.execute(message, args);

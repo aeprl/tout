@@ -17,7 +17,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
 	console.log(chalk.dim(`prefix is ${prefix}`));
-	client.user.setPresence({ activity: { name: 'if you write :3 ill kill you' }, status: 'idle' });
+	client.user.setPresence({ activity: { name: 'prefix = a' }, status: 'idle' });
 	console.log(chalk.italic(botInfo.name));
 	console.log(chalk.italic(botInfo.version));
 	console.log(chalk.bold(`${ client.user.username }'s up`));

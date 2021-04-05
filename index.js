@@ -33,6 +33,15 @@ client.on('message', message => {
 
 	const command = client.commands.get(commandName);
 
+	var cursed = [';3', ':3'];
+
+	if(cursed.some(w => ` ${msg.content.toLowerCase()} `.includes(` ${word} `))){
+		msg.delete();
+
+		var role = msg.guild.roles.cache.find(r => r.name === 'no');
+		msg.member.roles.add(role);
+	}
+
 	try {
 		command.execute(message, args);
 	}

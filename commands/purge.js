@@ -4,7 +4,7 @@ module.exports = {
 	name: 'purge',
 	description: 'delete multiple messages',
 	// eslint-disable-next-line no-unused-vars
-	execute(message, args) {
+	async execute(message, args) {
 
         if(!message.member.hasPermission("MANAGE_MESSAGES")){
             return message.channel.send(`you lack permissions to use this command.`);

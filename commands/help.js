@@ -19,9 +19,9 @@ module.exports = {
 				{ name : 'avatar', value : 'shows the avatar of the person mentioned/message sender' },
 				{ name : 'purge', value : 'deletes multiple messages from 2-100 messages'}
 			)
-			.setAuthor('tout v2')
-			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/1e9bbdef8ac0a6794c469c1763e7fa8a.png?size=1024')
-			.setThumbnail('https://cdn.discordapp.com/attachments/472189537162887180/737423176560279643/toutcircle2.png');
+			.setAuthor('tout v3')
+			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/0629a19a1b50445913671d29c65f314a.png?size=1024')
+			.setThumbnail('https://cdn.discordapp.com/attachments/737441496911052830/828764665890734120/toutcircle.png');
 
 		message.author.send(toutHelp);
 	},

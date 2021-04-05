@@ -28,13 +28,14 @@ module.exports = {
 
     try{
         await message.channel.bulkDelete(fetched)
-        .then(messages => message.channel.send(`deleted ${messages.size} messages.`))
+        .then(messages => message.channel.send(`deleted ${messages.size} messages.`)).then(msg => {
+				msg.delete({ timeout: 5000 });
+			}).catch(console.error);
+
     } catch (err){
         console.log(err);
         message.channel.send(`unable to delete messages.`)
-        .then(msg => {
-            msg.delete({ timeout: 5000 });
-        }).catch(console.error);
+    
     }
 
 	},

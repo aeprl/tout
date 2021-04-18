@@ -9,6 +9,8 @@ module.exports = {
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {
 
+        if (message.channel.type == "dm") return;
+
         const {guild} = message
         const { name, memberCount, owner } = guild
         const icon = guild.iconURL()
@@ -27,12 +29,8 @@ module.exports = {
 			.setTimestamp();
 
 
-                if(message.channel.type === !'dm'){
-                    message.author.send('command wont work in direct messages')
-                }else{
-                    message.channel.send(toutInfo);
-                }
-		            
+                
+		message.channel.send(toutInfo);
 	},
 
 };

@@ -28,9 +28,9 @@ module.exports = {
 
 
                 if(!message.channel.type === 'dm'){
-                    message.channel.send(toutInfo);
-                }else{
                     message.author.send('command wont work in direct messages')
+                }else{
+                    message.channel.send(toutInfo);
                 }
 		            
 	},

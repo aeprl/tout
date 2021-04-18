@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 
 module.exports = {
 	name: 'servericon',
-	description: `server's icon`,
+	description: `directly shows the icon of a server the user's in`,
     execute(message, args) {
 
         const {guild} = message

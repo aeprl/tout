@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 module.exports = {
 	name: 'serverinfo',
-	description: 'server info',
+	description: `shows valuable information about the server the user's in`,
 	alias: 'bi',
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {

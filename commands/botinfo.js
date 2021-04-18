@@ -4,7 +4,7 @@ const commandNumber = fs.readdirSync('./commands').length;
 
 module.exports = {
 	name: 'botinfo',
-	description: 'shows the info about the bot',
+	description: 'shows the version and amount of commands on the bot',
 	alias: 'bi',
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {

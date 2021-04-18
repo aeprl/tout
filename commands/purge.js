@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
 	name: 'purge',
-	description: 'delete multiple messages',
+	description: 'deletes multiple messages from 2-100 messages',
 	// eslint-disable-next-line no-unused-vars
 	async execute(message, args) {
 

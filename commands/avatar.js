@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 
 module.exports = {
 	name: 'avatar',
-	description: 'get your own or the mentioned persons avatar.',
+	description: 'shows the avatar of the person mentioned/message sender',
 	execute(message, args, client) {
 
 		const avatarEmbed = new Discord.MessageEmbed();

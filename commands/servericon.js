@@ -15,7 +15,7 @@ module.exports = {
             .setColor('acc6eb')
             .setAuthor(`${name} icon`)
             .setURL('https://www.youtube.com/watch?v=VD6__C2Ht6M')
-            .setImage(icon);
+            .setImage(icon({ format : `png`, dynamic: true, size: 1024 }));
     
         message.channel.send(toutSiCon);
     },

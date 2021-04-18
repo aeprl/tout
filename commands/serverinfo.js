@@ -21,8 +21,7 @@ module.exports = {
 			.setFooter('by aeprl#0031')
 			.setThumbnail(icon)
 			.addFields(
-				{ name : `${guild.name}` },
-				{ name : 'member count', value : `${memberCount}`, inline: true },
+				{ name : `${guild.name}`, value : `${memberCount} members`, inline: true },
 				{ name : 'owner tag', value : `${owner.user.tag}`, inline: true },
 			)
 			.setTimestamp();

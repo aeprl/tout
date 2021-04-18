@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-const{ name, memberCount, owner} = message.guild
-const icon = guild.iconURL()
+new Discord.Guild(clientdata);
+const{ name, memberCount, owner} = Guild
+const icon = Guild.iconURL()
 
 module.exports = {
 	name: 'serverinfo',

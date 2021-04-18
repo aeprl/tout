@@ -9,9 +9,7 @@ module.exports = {
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {
 
-        if (message.channel.type == "dm"){
-            message.channel.send(`you cant use this command in direct messages`)
-        } else
+     
 
         const {guild} = message
         const { name, memberCount, owner } = guild
@@ -30,9 +28,14 @@ module.exports = {
 			)
 			.setTimestamp();
 
-
+            if (message.channel.type == "dm"){
+                message.channel.send(`you cant use this command in direct messages`)
+            } return
                 
 		message.channel.send(toutInfo);
+
+   
+
 	},
 
 };

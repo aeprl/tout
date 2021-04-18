@@ -33,7 +33,6 @@ module.exports = {
 
                 
 		message.channel.send(toutInfo);
-        return;
 	},
 
 };

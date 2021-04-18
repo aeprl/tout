@@ -12,10 +12,6 @@ module.exports = {
         const {guild} = message
         const { name, memberCount, owner } = guild
         const icon = guild.iconURL()
-        
-        if (message.channel.type == "dm"){
-            message.channel.send(`you cant use this command in direct messages`)
-        } else
 
 		const toutInfo = new Discord.MessageEmbed()
 			.setColor('86b8ff')
@@ -28,8 +24,6 @@ module.exports = {
 				{ name : 'owner tag', value : `${owner.user.tag}`, inline: true },
 			)
 			.setTimestamp();
-
-        
                 
 		message.channel.send(toutInfo);
 

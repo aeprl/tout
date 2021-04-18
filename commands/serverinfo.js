@@ -27,7 +27,7 @@ module.exports = {
 			.setTimestamp();
 
 
-                if(!message.channel.type === 'dm'){
+                if(message.channel.type === !'dm'){
                     message.author.send('command wont work in direct messages')
                 }else{
                     message.channel.send(toutInfo);

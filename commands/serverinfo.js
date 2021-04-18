@@ -11,7 +11,7 @@ module.exports = {
 
         if (message.channel.type == "dm"){
             message.channel.send(`you cant use this command in direct messages`)
-        } else;
+        } return;
 
         const {guild} = message
         const { name, memberCount, owner } = guild

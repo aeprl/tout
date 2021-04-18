@@ -16,6 +16,8 @@ module.exports = {
 			.setTitle('bot commands')
 			.addFields(
 				{ name : 'botinfo', value : 'shows the version and amount of commands on the bot' },
+				{ name : 'serverinfo', value : `shows valuable information about the server the user's in`},
+				{ name : `servericon`, value : `directly shows the icon of a server the user's in`},
 				{ name : 'avatar', value : 'shows the avatar of the person mentioned/message sender' },
 				{ name : 'purge', value : 'deletes multiple messages from 2-100 messages'}
 			)

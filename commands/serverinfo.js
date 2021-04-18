@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-new Discord.Guild(clientdata);
+new Discord.Guild(client, data);
 const{ name, memberCount, owner} = Guild
 const icon = Guild.iconURL()
 

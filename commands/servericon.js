@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 
 module.exports = {
-	name: 'server icon',
+	name: 'servericon',
 	description: `server's icon`,
     execute(message, args) {
 

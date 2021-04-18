@@ -26,7 +26,11 @@ module.exports = {
 			)
 			.setTimestamp();
 
-		message.channel.send(toutInfo);
+
+                if(message.channel.type === 'dm'){
+                    message.author.send(`you can't use this command in direct messages.`)
+                }else
+		            message.channel.send(toutInfo);
 	},
 
 };

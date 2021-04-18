@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 const client = new Discord.Client();
-const {guild} = message
-const { name, memberCount, owner } = guild
-const icon = guild.iconURL()
 
 module.exports = {
 	name: 'serverinfo',
@@ -11,6 +8,12 @@ module.exports = {
 	alias: 'bi',
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {
+
+        const {guild} = message
+        const { name, memberCount, owner } = guild
+        const icon = guild.iconURL()
+        
+
 		const toutInfo = new Discord.MessageEmbed()
 			.setColor('acc6eb')
 			.setTitle(`${name} info`)

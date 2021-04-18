@@ -9,12 +9,13 @@ module.exports = {
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {
 
-     
-
         const {guild} = message
         const { name, memberCount, owner } = guild
         const icon = guild.iconURL()
         
+        if (message.channel.type == "dm"){
+            message.channel.send(`you cant use this command in direct messages`)
+        } else
 
 		const toutInfo = new Discord.MessageEmbed()
 			.setColor('86b8ff')
@@ -32,12 +33,7 @@ module.exports = {
                 
 		message.channel.send(toutInfo);
 
-        if (message.channel.type == "dm"){
-            message.channel.send(`you cant use this command in direct messages`)
-        } return
 
-   
-
-	},
+    },
 
 };

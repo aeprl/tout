@@ -15,7 +15,7 @@ module.exports = {
         
 
 		const toutInfo = new Discord.MessageEmbed()
-			.setColor('acc6eb')
+			.setColor('86b8ff')
 			.setTitle(`${name} info`)
 			.setURL('https://www.youtube.com/watch?v=VD6__C2Ht6M')
 			.setFooter('by aeprl#0031')

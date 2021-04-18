@@ -11,14 +11,14 @@ module.exports = {
 		if(!message.mentions.users.first()) {
 			avatarEmbed.setAuthor(message.author.username, message.author.displayAvatarURL({ format: 'png', dynamic: true}));
 			avatarEmbed.setImage(message.author.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
-			avatarEmbed.setColor('acc6eb');
+			avatarEmbed.setColor('86b8ff');
 			return message.channel.send(avatarEmbed);
 		}
 		else{
 			const mentionedUser = message.mentions.users.first();
 			avatarEmbed.setAuthor(message.author.username, message.author.displayAvatarURL({ format: 'png', dynamic: true}));
 			avatarEmbed.setImage(mentionedUser.displayAvatarURL({ format: 'png', dynamic: true, size: 1024 }));
-			avatarEmbed.setColor('acc6eb');
+			avatarEmbed.setColor('86b8ff');
 			return message.channel.send(avatarEmbed);
 		}
 	},

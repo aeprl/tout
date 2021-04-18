@@ -12,7 +12,7 @@ module.exports = {
 			}).catch(console.error);
 
 		const toutHelp = new Discord.MessageEmbed()
-			.setColor('acc6eb')
+			.setColor('86b8ff')
 			.setTitle('bot commands')
 			.addFields(
 				{ name : 'botinfo', value : 'shows the version and amount of commands on the bot' },
@@ -20,8 +20,8 @@ module.exports = {
 				{ name : 'purge', value : 'deletes multiple messages from 2-100 messages'}
 			)
 			.setAuthor('tout v3')
-			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/0629a19a1b50445913671d29c65f314a.png?size=1024')
-			.setThumbnail('https://cdn.discordapp.com/attachments/737441496911052830/828764665890734120/toutcircle.png');
+			.setFooter('by aeprl#0031')
+			.setThumbnail('https://cdn.discordapp.com/attachments/472189537162887180/833409783813374002/toutcircle.png');
 
 		message.author.send(toutHelp);
 	},

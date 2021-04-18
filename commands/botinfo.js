@@ -9,11 +9,11 @@ module.exports = {
 	// eslint-disable-next-line no-unused-vars
 	execute(message, args) {
 		const toutEmbed = new Discord.MessageEmbed()
-			.setColor('acc6eb')
+			.setColor('86b8ff')
 			.setTitle('bot info')
 			.setURL('https://www.youtube.com/watch?v=VD6__C2Ht6M')
-			.setFooter('by aeprl#0031', 'https://cdn.discordapp.com/avatars/162945458581274624/1e9bbdef8ac0a6794c469c1763e7fa8a.png?size=1024')
-			.setThumbnail('https://cdn.discordapp.com/attachments/472189537162887180/737423176560279643/toutcircle2.png')
+			.setFooter('by aeprl#0031')
+			.setThumbnail('https://cdn.discordapp.com/attachments/472189537162887180/833409783813374002/toutcircle.png')
 			.addFields(
 				{ name : 'tout version', value : '2.0.1' },
 				{ name : 'no. of commands', value : `${commandNumber}`, inline: true },

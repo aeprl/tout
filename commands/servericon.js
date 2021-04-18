@@ -9,10 +9,9 @@ module.exports = {
 
         const {guild} = message
         const {name} = guild
-        const icon = guild.iconURL()
         
         const toutSiCon = new Discord.MessageEmbed()
-            .setColor('acc6eb')
+            .setColor('86b8ff')
             .setAuthor(`${name} icon`)
             .setURL('https://www.youtube.com/watch?v=VD6__C2Ht6M')
             .setImage(guild.iconURL({ format : `png`, dynamic: true, size: 1024 }));

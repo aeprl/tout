@@ -7,8 +7,8 @@ module.exports = {
 	description: `server's icon`,
     execute(message, args) {
 
-        const guild = message
-        const name = guild
+        const {guild} = message
+        const {name} = guild
         const icon = guild.iconURL()
         
         const toutSiCon = new Discord.MessageEmbed()
